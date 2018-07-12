@@ -1,5 +1,5 @@
 // * set database.
-load('./config/setDB.js')
+// load('./config/setDB.js')
 
 load('./lib/convert_area_f.js')
 

@@ -1,5 +1,5 @@
 // * set database.
-load('./config/setDB.js')
+// load('./config/setDB.js')
 // some function
 load('./lib/addField_AvgPrice_f.js')
 

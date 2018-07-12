@@ -2,7 +2,7 @@
 this file excute two mongoDB operation 
 */
 // * set database.
-load('./config/setDB.js')
+// load('./config/setDB.js')
 // some function
 load('./lib/convert_date_f.js')
 

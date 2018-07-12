@@ -1,0 +1,5 @@
+let db = "estate"
+let col = "taichung_estates"
+let file = "/Users/Roro/Desktop/房價實價登錄_MongoDB/buy/taichung_1.CSV"
+
+mongoimport -d estate -c taichung_estates --type csv --file /Users/Roro/Desktop/房價實價登錄_MongoDB/buy/taichung_1.CSV --headerline;

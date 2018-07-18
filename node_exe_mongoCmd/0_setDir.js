@@ -26,3 +26,5 @@ process.stdin.on("data", function (data) {
   console.log("Done! the path is set.")
   process.exit()
 })
+
+// * node 0_setDir.js

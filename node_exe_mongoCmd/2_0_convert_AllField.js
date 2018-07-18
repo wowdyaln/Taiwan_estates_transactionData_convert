@@ -1,7 +1,7 @@
 // * set database.
 load('../config/setDB.js')
 // 
-load('./lib/addField_address_f.js')
+load('../buy/lib/addField_address_f.js')
 //土地區段位置/建物區段門牌 ，範圍 A~B號 ，取A 刪除B。   增加 field: address
 // if {"交易標的":{$not: {$eq: "土地"}}} ,convert.
 
@@ -10,9 +10,9 @@ db[colName]
   .find({ "交易標的": { $not: { $eq: "土地" } } })
   .forEach(document => addField_address(document));
 
-  
+
 //===================================
-load('./lib/convert_date_f.js')
+load('../buy/lib/convert_date_f.js')
 // * 交易年月日 ，轉換
 /*
 get the value of "交易年月日" and convert it to 西元格式 ; add "tradeDate" field.
@@ -23,9 +23,9 @@ db[colName]
   .find()
   .forEach(document => addField_tradeYMD(document));
 
-  
+
 //===================================
-load('./lib/convert_date_f.js')
+load('../buy/lib/convert_date_f.js')
 // * 建築完成年月，轉換
 /*
 get the value of "建築完成年月" and convert it to 西元格式 ; add "build_CompletionDate" field.
@@ -36,7 +36,7 @@ db[colName]
   .forEach(document => addField_build_completionYMD(document));
 
 //===========
-load('./lib/addField_AvgPrice_f.js')
+load('../buy/lib/addField_AvgPrice_f.js')
 
 
 // ! excute
@@ -45,7 +45,7 @@ db[colName]
   .forEach(document => pricePyeong_withParkingLot(document));
 
 //=============
-load('./lib/addField_AvgPrice_f.js')
+load('../buy/lib/addField_AvgPrice_f.js')
 
 
 // ! excute
@@ -54,13 +54,10 @@ db[colName]
   .forEach(document => pricePyeong(document));
 
 //================
-load('./lib/convert_area_f.js')
+load('../buy/lib/convert_area_f.js')
 
 
 // ! excute
 db[colName]
   .find()
   .forEach(document => convert_area(document));
-
-// print(`db: ${db}  /  collection: ${colName}.  All fields are converted.`)
-// mongo 1_0_convert_AllField.js

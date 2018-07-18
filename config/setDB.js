@@ -1,5 +1,5 @@
 // * set database.
-db = db.getSiblingDB('estate');
+db = db.getSiblingDB('dev');
 
 
 // * set a collection

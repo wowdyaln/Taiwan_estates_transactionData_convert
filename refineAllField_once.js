@@ -1,6 +1,4 @@
 // todo : add 'address' 'tradeDate' 'buildCompletionDate' 'avgPrice_withCar' 'avgPrice' fields,
-// * set database.
-// load('./config/setDB.js')
 // load function
 // load('./lib/addField_address_f.js')
 // load('./lib/convert_date_f.js')

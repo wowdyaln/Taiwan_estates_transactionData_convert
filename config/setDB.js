@@ -3,4 +3,4 @@ db = db.getSiblingDB('estate');
 
 
 // * set a collection
-let colName = "ttt"
+let colName = "2018_0521-31_taipei_buy"

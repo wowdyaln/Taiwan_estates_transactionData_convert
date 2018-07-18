@@ -7,7 +7,7 @@ process.stdout.write(`
 
   MongoDB database : ${database}
 
-  To set a source data field path to import to MongoDB.
+  To set a folder path of source dataFiles to import data to MongoDB.
   input the path （ e.g.  /User/dirA/dirB/dirC  ）
   and press 'Enter'.
 

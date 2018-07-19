@@ -2,7 +2,7 @@
 load('../config/setDB.js')
 // 
 load('./lib/addField_address_f.js')
-//土地區段位置/建物區段門牌 ，範圍 A~B號 ，取A 刪除B。   增加 field: address
+// * 土地區段位置/建物區段門牌 ，範圍 A~B號 ，取A 刪除B。   增加 field: address
 // if {"交易標的":{$not: {$eq: "土地"}}} ,convert.
 
 // ! excute
@@ -37,7 +37,7 @@ db[colName]
 
 //===========
 load('./lib/addField_AvgPrice_f.js')
-
+// * 換算單價（坪），有車位轉移 and 車位移轉總面積 !==0 and 車位總價 !==0。 3個條件都滿足才列入計算。
 
 // ! excute
 db[colName]
@@ -46,7 +46,7 @@ db[colName]
 
 //=============
 load('./lib/addField_AvgPrice_f.js')
-
+// * 換算單價（坪），不包含車位轉移的交易才列入計算。
 
 // ! excute
 db[colName]
@@ -55,7 +55,7 @@ db[colName]
 
 //================
 load('./lib/convert_area_f.js')
-
+// * 平方公尺轉換爲坪。
 
 // ! excute
 db[colName]

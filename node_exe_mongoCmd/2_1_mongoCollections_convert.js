@@ -17,13 +17,7 @@ files.forEach(file => {
     shell.execSync(`mongo 2_0_convert_AllField.js`)
     console.log(`collection: ${fileName}.  All fields are converted.`);
 
-  } else if (path.extname(file) === '.json') {
-    let fileName = path.basename(file, '.json') // 無副檔名
-    shell.execSync(`node 0_setCollection.js ${fileName}`)
-    shell.execSync(`mongo 2_0_convert_AllField.js`)
-    console.log(`collection: ${fileName}.  All fields are converted.`);
-
-  } else if (path.extname(file) !== '.csv' || path.extname(file) !== '.json') {
+  } else if ( path.extname(file) !== '.csv' ) {
     console.log(`
     
     wrong file format:  ${file}

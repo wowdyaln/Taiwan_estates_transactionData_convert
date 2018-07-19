@@ -1,9 +1,18 @@
 // * set database.
 load('../config/setDB.js')
-// 
-load('../buy/lib/addField_address_f.js')
-//土地區段位置/建物區段門牌 ，範圍 A~B號 ，取A 刪除B。   增加 field: address
+
+
+// * 建物移轉總面積(平方公尺) roundTwoDecimal
+load('./lib/roundTwoDecimal.js')
+// ! excute
+db[colName]
+  .find()
+  .forEach(document => roundTwoDecimal(document));
+
+  
+// * 土地區段位置/建物區段門牌 ，範圍 A~B號 ，取A 刪除B。   增加 field: address
 // if {"交易標的":{$not: {$eq: "土地"}}} ,convert.
+load('../buy/lib/addField_address_f.js')
 
 // ! excute
 db[colName]

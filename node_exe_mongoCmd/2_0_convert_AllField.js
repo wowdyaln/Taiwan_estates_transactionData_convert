@@ -3,7 +3,7 @@ load('../config/setDB.js')
 
 
 // * 建物移轉總面積(平方公尺) roundTwoDecimal
-load('./lib/roundTwoDecimal.js')
+load('../buy/lib/roundTwoDecimal_f.js')
 // ! excute
 db[colName]
   .find()

@@ -1,4 +1,7 @@
+[How to use ?](https://goo.gl/Cx4svs)
+
 ##### Import csv / json files to MongoDB. Convert data via MongoDB with mongo shell commands and export to csv files.
+
 
 0. download RAW data here : [內政部不動產交易實價查詢](http://plvr.land.moi.gov.tw/DownloadOpenData)
 ( only 不動產買賣 can be converted, new feature is in the future, select 'csv' format.)

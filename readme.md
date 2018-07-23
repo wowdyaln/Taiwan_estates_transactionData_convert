@@ -6,8 +6,8 @@ Create a folder to store `csv` files. File name will be a name of collection lat
 
 1. Set the path of folder you just created on step0.
 
-    - `node 0_setDir.js` 
-    ( path:  node_exe_mongoCmd/0_setDir.js )
+    - `node 0_1_setDir.js` 
+    ( path:  node_exe_mongoCmd/0_1_setDir.js )
   
 2. configure database 
     - `node 0_setDatabase.js` 
